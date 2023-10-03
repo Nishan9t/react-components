@@ -12,22 +12,23 @@ export default function DropNavbar() {
             onClick={()=>setActive(!active)}
             ><HiOutlineSquare3Stack3D/>
             </button>
+           
             
-        <div className={`${active && 'pt-12 '}px-4 bg-gray-500`}>
+        <div className={`${active && 'pt-12 '}px-12 py-5 duration-1000  bg-gray-500 z-50`}>
             {
                 
                 active &&
-                <ul className='origin-top duration-1000'>
-                <li>Home</li>
-                <li>Contact</li>
-                <li>About</li>
-                <li>Services</li>
-            </ul>
+                <ul className={`${!active ? "h-0 ":"h-auto"}origin-top  duration-1000 `}>
+                <li className='pt-2 hover:text-white hover:border-b-2 cursor-pointer'>Home</li>
+                <li className='pt-2 hover:text-white hover:border-b-2 cursor-pointer'>Contact</li>
+                <li className='pt-2 hover:text-white hover:border-b-2 cursor-pointer'>About</li>
+                <li className='pt-2 hover:text-white hover:border-b-2 cursor-pointer'>Services</li>
+                </ul>
             }
             
         </div>
         <div className='flex-1 bg-green-300'>
-
+                <h1>hii</h1>
         </div>
     </div>
   )

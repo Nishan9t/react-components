@@ -13,13 +13,7 @@ const SlideInComponent = () => {
         <button className={`absolute cursor-pointer -right-0 top-0 border-2 rounded-full px-2 text-white font-bold bg-red-500 ${!open && 'rotate-180'}` }
         onClick={()=>{
           setOpen(!open)
-          // if(active ===">")
-          // {
-          //   setActive("<")
-          // }
-          // else{
-          //   setActive(">")
-          // }
+         
         }}  
         >{active}</button>
           <span className={`${!open && 'hidden'} origin-left duration-500`}>
