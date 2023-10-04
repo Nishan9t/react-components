@@ -1,33 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import "../App.css"
 
 export default function Framermotion() {
-  return (
-    <motion.div className='my-auto items-center'
-    animate={{
-        marginTop:16,
-        opacity:0.8,
-        rotateZ: -20
-    }}>
-    <motion.h1 className='text-center text-2xl '
-     animate={
-        {
-            fontSize:200,
-            color:'#ff2994',
-            x:100,
-            y:100
-        }
-    }>
-        Welcome to Pizza Joint
-    </motion.h1>
-    <motion.button className=' border-2  p-2 ml-16'
-    animate={{
-        scale:1.5,
-        color:'#ff2342'
-    }} >
-        Create Your Pizza
-    </motion.button>
+    const [isOn, setIsOn] = useState(false);
 
-    </motion.div>
-  )
+    const toggleSwitch = () => setIsOn(!isOn);
+    const spring = {
+        type: "spring",
+        stiffness: 700,
+        damping: 30
+      };
+  
+    return (
+      <div className="switch" data-isOn={isOn} onClick={toggleSwitch}>
+        <motion.div className="handle" layout transition={spring} />
+      </div>
+    );
+  
+  
+ 
 }
