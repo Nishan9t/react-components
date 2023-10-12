@@ -1,5 +1,6 @@
 
 // import './App.css';
+import Card from './components/Card';
 import DropNavbar from './components/DropNavbar';
 import Framermotion from './components/Framermotion';
 
@@ -12,8 +13,8 @@ function App() {
     {/* <SlideInComponent/> */}
     {/* <DropNavbar/> */}
     {/* <Framermotion/> */}
-    <Slider/>
-
+    {/* <Slider/> */}
+    <Card/>
     </div>
   );
 }

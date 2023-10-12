@@ -43,6 +43,8 @@ export default function Slider() {
 
     }
 
+    // setInterval(nextSlide,5000);
+
   return (
     //providing class of group
     <div className='max-w-[1400px] h-[780px] w-full m-auto py-16 px-4 relative group'>
