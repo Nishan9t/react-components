@@ -6,6 +6,7 @@ import Framermotion from './components/Framermotion';
 
 import SlideInComponent from './components/SlideInComponent';
 import Slider from './components/Slider';
+import Toggle from './components/Toggle';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
     {/* <DropNavbar/> */}
     {/* <Framermotion/> */}
     {/* <Slider/> */}
-    <Card/>
+    {/* <Card/> */}
+    <Toggle/>
     </div>
   );
 }
