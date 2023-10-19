@@ -1,5 +1,6 @@
 
 // import './App.css';
+import Buttons from './components/Buttons';
 import Card from './components/Card';
 import DropNavbar from './components/DropNavbar';
 import Framermotion from './components/Framermotion';
@@ -16,7 +17,8 @@ function App() {
     {/* <Framermotion/> */}
     {/* <Slider/> */}
     {/* <Card/> */}
-    <Toggle/>
+    {/* <Toggle/> */}
+    <Buttons/>
     </div>
   );
 }
