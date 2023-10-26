@@ -25,8 +25,8 @@ function App() {
     {/* <Card/> */}
     {/* <Toggle/> */}
     {/* <Buttons/> */}
-    <Cart/>
-    <Cards/>
+    <Cart number={number} />
+    <Cards number={number} setNumber={setNumber}/>
     </div>
   );
 }
