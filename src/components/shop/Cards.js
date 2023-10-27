@@ -1,19 +1,24 @@
 import React from 'react'
+import { useContext } from 'react'
+import { MyContext } from '../../MyProvider'
 
-export default function Cards({number,setNumber}) {
+export default function Cards() {
+
+  const {number,setNumber} = useContext(MyContext)
+
   const handleAdd=()=>{
-    setNumber(++number)
+    const temp = number;
+    setNumber(1+temp)
     console.log(number)
   }
 
   const handleSub=()=>{
     if(number >0)
     {
-      setNumber(--number)
+      const temp = number;
+      setNumber(temp-1)
     }
-    else{
-      setNumber(0);
-    }
+   
     console.log(number)
     
   }

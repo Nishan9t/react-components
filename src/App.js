@@ -11,12 +11,15 @@ import Slider from './components/Slider';
 import Toggle from './components/Toggle';
 import Cards from './components/shop/Cards';
 import Cart from './components/shop/Cart';
+import MyProvider from './MyProvider';
+
 
 function App() {
 
-  const [number,setNumber] = useState(0)
+  // const [number,setNumber] = useState(0)
 
   return (
+    <MyProvider>
     <div>
     {/* <SlideInComponent/> */}
     {/* <DropNavbar/> */}
@@ -25,9 +28,10 @@ function App() {
     {/* <Card/> */}
     {/* <Toggle/> */}
     {/* <Buttons/> */}
-    <Cart number={number} />
-    <Cards number={number} setNumber={setNumber}/>
+    <Cart />
+    <Cards />
     </div>
+    </MyProvider>
   );
 }
 

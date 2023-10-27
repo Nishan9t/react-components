@@ -1,8 +1,12 @@
 import React from 'react'
+import { useContext } from 'react'
 import { useEffect } from 'react'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
+import { MyContext } from '../../MyProvider'
 
-export default function Cart({number}) {
+export default function Cart() {
+
+  const {number,setNumber} = useContext(MyContext)
 
   useEffect(()=>{
 
