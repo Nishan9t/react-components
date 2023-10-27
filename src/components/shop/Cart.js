@@ -3,14 +3,18 @@ import { useContext } from 'react'
 import { useEffect } from 'react'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import { MyContext } from '../../MyProvider'
+import { useSelector } from 'react-redux'
 
 export default function Cart() {
 
-  const {number,setNumber} = useContext(MyContext)
+  // const {number,setNumber} = useContext(MyContext)
 
-  useEffect(()=>{
+  
+  const number = useSelector((state) => state.counter.value)
 
-  },[number])
+  // useEffect(()=>{
+
+  // },[number])
   return (
     <div className='w-full h-[60px] bg-green-400 flex justify-between py-4 px-8'>
     <div className='text-white font-bold text-2xl'>Shopping Cart</div>
